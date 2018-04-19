@@ -7,3 +7,4 @@ FROM busybox
 MAINTAINER "Senorsen (Zhang Sen) <senorsen.zhang@gmail.com"
 COPY --from=build /usr/share/zoneinfo /usr/share/zoneinfo
 COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY bash /bin/bash
